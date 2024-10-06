@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { CopyButton } from '@/componentpreview/CopyButton'
+import { CopyButton } from './CopyButton'
 import { cn } from '@/lib/utils'
 
 

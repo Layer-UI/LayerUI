@@ -1,10 +1,11 @@
 "use client"
 
+import DocsCode from '@repo/ui/docscode'
 import React from 'react'
-import DocsCode from '@/components/uicomponentslayout/DocsCode'
 
 const utilfile = `import {ClassValue, clsx} from "clsx";
 import {twMerge} from "tailwind-merge";
+import DocsCode from '../../../../../../packages/ui/src/componentpreview/DocsCode';
 
 
 export function cn(...inputs: ClassValue[]) {

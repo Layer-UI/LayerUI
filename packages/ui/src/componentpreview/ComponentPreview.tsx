@@ -1,10 +1,8 @@
 'use client';
 
 import React, { useMemo, useState, Suspense } from 'react';
-import CodeDisplay from '@/components/uicomponentslayout/Code';
-import { RawCodeSnippet } from '@/components/uicomponentslayout/Code';
-import { Icons } from '@/icons/Icons';
-import Tabs from '@/components/ui/AnimatedTabs';
+import CodeDisplay from './CodeBlock';
+import Tabs from './Tabs';
 import { cn } from '@/lib/utils';
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -22,16 +20,15 @@ const ComponentPreview = ({
   const LazyLoadedPreview = useMemo(() => {
 
     try {
-      const DynamicComponent = React.lazy(() => import(`../../section/${filePath}.tsx`));
+      const DynamicComponent = React.lazy(() => import(`../sections/${filePath}.tsx`));
       return <DynamicComponent />;
     } catch (err) {
       console.error(`Error loading component from path: ${filePath}`, err);
       return (
         <div className="text-muted-foreground text-sm">
           Could not find component{' '}
-          <RawCodeSnippet className="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm">
-            {filePath}
-          </RawCodeSnippet>
+          <CodeDisplay code={filePath} className="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm">
+          </CodeDisplay>
           .
         </div>
       );
@@ -41,7 +38,7 @@ const ComponentPreview = ({
   // Memoizing the code for the selected component
   const codeContent = useMemo(() => {
     try {
-      const rawCode = require(`!!raw-loader!../../section/${filePath}.tsx`).default;
+      const rawCode = require(`!!raw-loader!../sections/${filePath}.tsx`).default;
       const cleanedCode = rawCode.replace(/'use client'\n/, ''); // Stripping 'use client' directive
       return cleanedCode;
     } catch (err) {
@@ -65,7 +62,6 @@ const ComponentPreview = ({
             <Suspense
               fallback={
                 <div className="text-muted-foreground flex items-center text-sm">
-                  <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
                   Loading component...
                 </div>
               }
@@ -78,7 +74,7 @@ const ComponentPreview = ({
 
       {activeTab === 'code' && codeContent && (
         <div className="relative w-full">
-          <CodeDisplay language="typescript" code={codeContent} />
+          <CodeDisplay codeLang="typescript" code={codeContent} />
         </div>
       )}
     </div>

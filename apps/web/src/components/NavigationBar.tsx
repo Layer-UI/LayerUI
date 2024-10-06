@@ -7,7 +7,7 @@ import ThemeToggle from './ThemeToggle';
 import { SearchBar } from './ui/searchbar';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import logo from "@/public/logo.png"
+import logo from "@/../public/logo.png"
 import { Sidebar } from './Sidebar';
 import { sidebarList } from '@/lib/sectionlist';
 

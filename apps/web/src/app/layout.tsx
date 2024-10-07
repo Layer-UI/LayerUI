@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import NavigationBar from "@/components/NavigationBar";
 import { ThemeProvider } from "next-themes";
-import Footer from "@/components/Footer";
+import TwoColumnFooter from "@/components/Footer";
 import { constructMetadata } from "@/lib/utils";
 
 
@@ -30,7 +30,7 @@ export default function RootLayout({
         >
           <NavigationBar></NavigationBar>
           {children}
-          <Footer></Footer>
+          <TwoColumnFooter></TwoColumnFooter>
         </ThemeProvider>
         <Analytics></Analytics>
       </body>

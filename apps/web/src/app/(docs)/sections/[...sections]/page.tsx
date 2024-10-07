@@ -8,6 +8,6 @@ export default function Page() {
     const params = useParams<{ sections: string }>()
     const path = Array.isArray(params.sections) ? params.sections.join('/') : params.sections;
     return (
-        <ComponentPreview filePath='pricing/twopricingcard'></ComponentPreview>
+        <ComponentPreview filePath={path}></ComponentPreview>
     )
 }

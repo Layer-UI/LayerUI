@@ -30,10 +30,10 @@ export function CopyButton({
     <button
       type="button"
       className={cn(
-        `group/button absolute right-2 top-2 overflow-hidden rounded-lg border p-1.5 text-2xs font-medium backdrop-blur transition focus:opacity-100 ${className}`,
+        `group/button absolute right-2 shadow-inner cursor-pointer top-2 overflow-hidden rounded-lg border border-white/10 p-1.5 text-2xs font-medium backdrop-blur transition focus:opacity-100 ${className}`,
         copied
-          ? 'bg-blue-400/20 ring-1 ring-inset ring-blue-400/30'
-          : 'bg-white/10 hover:bg-white/15 dark:bg-white/2.5 dark:hover:bg-white/5',
+          ? ' text-blue-700 shadow-blue-700/80 '
+          : 'bg-black text-white shadow-white/70 ',
       )}
       onClick={() => {
         window.navigator.clipboard.writeText(value).then(() => {

@@ -37,13 +37,9 @@ const ComponentPreview = ({
 
   // Memoizing the code for the selected component
   const codeContent = useMemo(() => {
-
     try {
-      console.log(filePath)
-
-      const rawCode = require(`!!raw-loader!../sections/${filePath}.tsx`).default;
-      const cleanedCode = rawCode.replace(/'use client'\n/, ''); // Stripping 'use client' directive
-      return cleanedCode;
+      const Code = require(`!!raw-loader!../sections/${filePath}.tsx`).default;
+      return Code;
     } catch (err) {
       console.error(`Error loading code for component at ${filePath}:`, err);
       return null;

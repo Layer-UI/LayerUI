@@ -1,7 +1,7 @@
 /* vscode-theme.css */
 .hljs {
   background-color: #000000; /* VS Code's dark background */
-  color: #d4d4d4; /* Default text color */
+  color: #ffffff; /* Default text color */
   padding: 0; /* No extra padding */
   border: none; /* No borders */
   border-radius: 0; /* Remove rounded corners */
@@ -17,18 +17,18 @@
 
 /* Strings */
 .hljs-string {
-  color: #ce9178; /* VS Code reddish-orange for strings */
+  color: #f84600; /* VS Code reddish-orange for strings */
 }
 
 /* Comments */
 .hljs-comment {
-  color: #6a9955; /* Green for comments */
+  color: #8e8e8e; /* Green for comments */
   font-style: italic;
 }
 
 /* Function names */
 .hljs-title {
-  color: #dcdcaa; /* Light yellow for function names */
+  color: #ffae00; /* Light yellow for function names */
 }
 
 /* Numbers, constants, booleans */
@@ -53,7 +53,7 @@
 
 /* Built-in functions, methods */
 .hljs-built_in {
-  color: #dcdcaa; /* Same as function names */
+  color: #ffbb00; /* Same as function names */
 }
 
 /* Class and constructor names */

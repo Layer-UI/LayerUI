@@ -1,9 +1,10 @@
 "use client"
 
 import React from 'react'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { CopyButton } from './CopyButton'
 import { cn } from '@/lib/utils'
+import Highlight from 'react-highlight'
+import './vscode-theme.css'; 
 
 
 export default function DocsCode({ code, children }: { code?: string, children?: React.ReactNode }) {
@@ -43,13 +44,13 @@ export default function DocsCode({ code, children }: { code?: string, children?:
                 {code &&
                     <div
                         className={cn(
-                            'relative w-full bg-zinc-900 text-white pb-0 rounded-xl',
+                            'relative w-full p-3 flex justify-between items-center bg-black rounded-xl',
                         )}
                     >
                         <CopyButton value={code} className="z-10 border-none" />
-                        <SyntaxHighlighter language="bash" wrapLines wrapLongLines >
+                        <Highlight className="bash"  >
                             {code}
-                        </SyntaxHighlighter>
+                        </Highlight>
                     </div>}
             </div>
         </div>

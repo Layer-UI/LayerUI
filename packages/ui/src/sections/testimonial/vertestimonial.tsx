@@ -1,7 +1,5 @@
-'use client';
-
-import TestimonialCard from '@/components/layerui/vertical-testimonialcard';
-import TestimonialHeader from '@/components/layerui/vertical-testimonialheader';
+import TestimonialCard from '@/components/ui/hovertestimonialcard';
+import TestimonialHeader from '@/components/ui/hovertestimonialheader';
 import { motion } from 'framer-motion';
 
 const testimonials = [

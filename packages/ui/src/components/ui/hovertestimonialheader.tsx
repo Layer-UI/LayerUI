@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const FADE_DOWN_ANIMATION_VARIANTS = {

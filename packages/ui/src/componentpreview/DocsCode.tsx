@@ -4,7 +4,7 @@ import React from 'react'
 import { CopyButton } from './CopyButton'
 import { cn } from '@/lib/utils'
 import Highlight from 'react-highlight'
-import './vscode-theme.css'; 
+import './vscode-theme.css';
 
 
 export default function DocsCode({ code, children }: { code?: string, children?: React.ReactNode }) {
@@ -51,7 +51,8 @@ export default function DocsCode({ code, children }: { code?: string, children?:
                         <Highlight className="bash"  >
                             {code}
                         </Highlight>
-                    </div>}
+                    </div>
+                }
             </div>
         </div>
     )

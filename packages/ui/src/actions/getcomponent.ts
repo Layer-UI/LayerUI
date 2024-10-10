@@ -18,7 +18,7 @@ export function extractFilesAndPackages(code: string) {
         if (fileRegex.test(line)) {
             const match = line.match(fileRegex);
             if (match && match[1] !== '/lib/utils') {
-                fileImports.push(match[0].replace(/['"]/g, ''));  // Remove quotes
+                fileImports.push(match[0].replace(/['"]/g, '').replace(/^@\/components\/ui\//, ''));
             }
         } else if (packageRegex.test(line)) {
             const match = line.match(packageRegex);

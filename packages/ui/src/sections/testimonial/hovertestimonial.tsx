@@ -1,8 +1,6 @@
-"use client";
 
-import TestimonialCard from '@/sections/components/ui/hover-testimonialcard';
-import TestimonialHeader from '';
-import React from 'react';
+import TestimonialCard from '@/components/ui/hovertestimonialcard';
+import TestimonialHeader from '@/components/ui/hovertestimonialheader';
 
 
 const testimonials = [

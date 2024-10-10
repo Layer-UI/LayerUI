@@ -1,10 +1,9 @@
-"use client"
-
 import React from 'react'
 import { CopyButton } from './CopyButton'
 import { cn } from '@/lib/utils'
 import Highlight from 'react-highlight'
-import './vscode-theme.css';
+import './theme.css';
+import { CodeDisplay } from './CodeBlock';
 
 
 export default function DocsCode({ code, children }: { code?: string, children?: React.ReactNode }) {
@@ -42,16 +41,7 @@ export default function DocsCode({ code, children }: { code?: string, children?:
             <div className=" pb-8 w-full">
                 {children}
                 {code &&
-                    <div
-                        className={cn(
-                            'relative w-full p-3 flex justify-between items-center bg-black rounded-xl',
-                        )}
-                    >
-                        <CopyButton value={code} className="z-10 border-none" />
-                        <Highlight className="bash"  >
-                            {code}
-                        </Highlight>
-                    </div>
+                    <CodeDisplay code={code} staticcode={true} codeLang='apache'></CodeDisplay>
                 }
             </div>
         </div>

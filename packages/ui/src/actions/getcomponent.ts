@@ -1,6 +1,3 @@
-
-
-
 export function extractFilesAndPackages(code: string) {
     // Split code into lines
     const lines = code.split('\n');
@@ -23,7 +20,16 @@ export function extractFilesAndPackages(code: string) {
         } else if (packageRegex.test(line)) {
             const match = line.match(packageRegex);
             if (match && match[1] !== 'react') {
-                packageImports = packageImports + ' ' + (match[1]);  // Get the package name
+                // Check if the package is a sub-package of react-icons
+                if (match[1].startsWith('react-icons')) {
+                    // Only add 'react-icons' once if it's not already in packageImports
+                    if (!packageImports.includes('react-icons')) {
+                        packageImports = packageImports + ' react-icons';
+                    }
+                } else {
+                    // Add other package names normally
+                    packageImports = packageImports + ' ' + match[1];
+                }
             }
         }
     });

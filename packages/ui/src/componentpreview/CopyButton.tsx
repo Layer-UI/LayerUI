@@ -1,4 +1,3 @@
-'use client'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Check, Copy } from 'lucide-react'
 import { useEffect, useState } from 'react'

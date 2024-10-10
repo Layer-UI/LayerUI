@@ -1,13 +1,9 @@
-'use client';
-
 import React, { useMemo, useState, Suspense } from 'react';
-import CodeDisplay from './CodeBlock';
+import { CodeDisplay } from './CodeBlock';
 import Tabs from './Tabs';
 import { cn } from '@/lib/utils';
 import { extractFilesAndPackages } from '@/actions/getcomponent';
 import { CopyButton } from './CopyButton';
-import Highlight from 'react-highlight';
-import './vscode-theme.css';
 import Fileperview from './Fileperview';
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -52,7 +48,6 @@ const ComponentPreview = ({
   }, [filePath]);
 
   const { fileImports, packageImports } = extractFilesAndPackages(codeContent)
-  console.log(fileImports, packageImports)
   const [activeTab, setActiveTab] = useState('preview');
 
   return (
@@ -90,16 +85,9 @@ const ComponentPreview = ({
             packageImports !== 'npm install' &&
             <div className=' mt-5 space-y-3'>
               <h1 className=' font-bold'>Install dependencies</h1>
-              <div
-                className={cn(
-                  'relative w-full p-4 mt-4 flex justify-between items-center bg-black rounded-xl',
-                )}
-              >
-                <CopyButton value={packageImports} className="z-10 border-none" />
-                <Highlight className="bash"  >
-                  {packageImports}
-                </Highlight>
-              </div>
+             
+                <CodeDisplay code={packageImports} staticcode={true} codeLang='apache'  >
+                </CodeDisplay>
             </div>
           }
           {

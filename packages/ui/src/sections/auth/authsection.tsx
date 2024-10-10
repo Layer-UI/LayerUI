@@ -2,7 +2,10 @@
 // Import necessary modules and components
 import { cn } from '@/lib/utils';
 import React, { useState } from 'react';
-import { IconBrandGoogle,IconBrandApple ,IconBrandTwitter ,IconEye ,IconEyeClosed  } from '@tabler/icons-react';
+import { SlSocialGoogle } from "react-icons/sl";
+import { RiTwitterXLine } from "react-icons/ri";
+import { PiEyeClosedBold } from "react-icons/pi";
+import { FaApple, FaRegEye } from "react-icons/fa";
 import Input from '@/components/ui/shadow-input';
 
 // Define the AuthSection component
@@ -80,7 +83,7 @@ export default function AuthSection() {
                                 className='absolute inset-y-0 right-0 flex items-center p-4'
                                 onClick={() => setIsPasswordVisible(!isPasswordVisible)}
                             >
-                                {isPasswordVisible ? <IconEye /> : <IconEyeClosed />}
+                                {isPasswordVisible ? <FaRegEye /> : <PiEyeClosedBold />}
                             </button>
                         </div>
                     </LabelInputContainer>
@@ -118,23 +121,23 @@ export default function AuthSection() {
                     <div className="flex flex-col gap-2">
                         <button
                             type="submit"
-                            className="flex items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
+                            className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <IconBrandGoogle  />
+                            <SlSocialGoogle  className="size-5"/>
                             <span>Continue with Google</span>
                         </button>
                         <button
                             type="submit"
-                            className="flex items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
+                            className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <IconBrandTwitter />
+                            <RiTwitterXLine className="size-5"/>
                             <span>Continue with Twitter</span>
                         </button>
                         <button
                             type="submit"
-                            className="flex items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
+                            className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <IconBrandApple />
+                            <FaApple  className="size-5"/>
                             <span>Continue with Apple</span>
                         </button>
                     </div>

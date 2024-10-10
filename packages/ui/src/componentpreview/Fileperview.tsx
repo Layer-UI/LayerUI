@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import CodeBlock from './CodeBlock';
+import {CodeDisplay} from './CodeBlock';
 
 export default function Fileperview({ filepath }: { filepath: string }) {
     const codeContent = useMemo(() => {
@@ -16,7 +16,7 @@ export default function Fileperview({ filepath }: { filepath: string }) {
             <div>
                 <code className=" rounded bg-muted px-1.5 bg-slate-200 border py-[0.3rem] text-sm">{`components/ui/${filepath}`}</code>
             </div>
-            <CodeBlock code={codeContent} codeLang='typescript'></CodeBlock>
+            <CodeDisplay code={codeContent} codeLang='typescript'></CodeDisplay>
         </div>
     )
 }

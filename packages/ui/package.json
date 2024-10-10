@@ -34,6 +34,10 @@
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.2.0",
+    "@tabler/icons-react": "^3.19.0",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
     "@types/react-custom-scrollbars": "^4.0.13",
     "@types/react-highlight": "^0.12.8",
     "@types/react-syntax-highlighter": "^15.5.13",

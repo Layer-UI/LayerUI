@@ -84,7 +84,7 @@ function Heading({ billing, setBilling }: billinginfo) {
             <div className="inline-flex animate-shine items-center justify-center rounded-xl border border-neutral-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-4 shadow-lg py-1.5 font-medium text-white transition-colors">
                 Pricing
             </div>      <p
-                className="  text-2xl md:text-5xl font-bold">Our plans for your strategies</p>
+                className="  text-2xl md:text-5xl  text-center font-bold">Our plans for your strategies</p>
             <p
 
                 className=" text-center text-xs md:text-base  max-w-2xl ">See below our main three plans for your business, for your startup and agency.It start from here! You can teach yourself what you really like.</p>

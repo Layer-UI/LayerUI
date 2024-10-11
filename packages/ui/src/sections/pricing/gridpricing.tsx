@@ -95,7 +95,7 @@ function Heading({ billing, setBilling }: BillingInfo) {
                 whileInView={{ rotateX: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeIn' }}
                 viewport={{ once: true }}
-                className="text-2xl md:text-5xl font-bold"
+                className="text-2xl text-center md:text-5xl font-bold"
             >
                 Our plans for your strategies
             </motion.p>

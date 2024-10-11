@@ -8,12 +8,14 @@ import Fileperview from './Fileperview';
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   filePath: string;
+  tag:string;
   componentName?: string;
 }
 
 const ComponentPreview = ({
   filePath,
   className,
+  tag,
   componentName,
 }: ComponentPreviewProps) => {
 
@@ -52,6 +54,10 @@ const ComponentPreview = ({
 
   return (
     <div className={cn('group relative flex w-full min-w-0 gap-1 flex-col', className)} >
+      <div className='my-6 '>
+      <h1 className=' font-bold text-4xl capitalize mb-3 '>{componentName}</h1>
+      <span className=' border shadow-sm px-2 py-0.5 bg-black/30 text-white dark:text-black dark:bg-white/70 text-center rounded-lg '>{tag}</span>
+      </div>
       {/* Preview and Code Tab Navigation */}
       <div className="flex flex-col gap-5">
         <Tabs selected={activeTab} setSelected={setActiveTab} />

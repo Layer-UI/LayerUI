@@ -1,5 +1,3 @@
-"use client";
-
 const logos = [
     { name: 'Docker', image: '/sociallogos/Docker.svg' },
     { name: 'Google', image: '/sociallogos/Google.svg' },
@@ -15,7 +13,6 @@ const LogoProof = () => (
             <p className="text-xl sm:text-4xl font-bold">Partnerships with Coveted Brands</p>
             <p className="p-6 sm:text-base text-sm m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit nam maxime quas fugiat tempore blanditiis, eveniet quia accusantium.</p>
         </div>
-        <img src="/sociallogos/Spotify.svg"></img>
         <div className="mx-auto w-full px-4 md:px-8 max-w-4xl">
             <div className="group relative mt-6 flex gap-6 overflow-hidden p-5">
                 {logos.map(({ image, name }, i) => (

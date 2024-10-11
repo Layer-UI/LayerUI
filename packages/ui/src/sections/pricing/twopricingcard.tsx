@@ -68,7 +68,7 @@ function Heading({ billing, setBilling }: billinginfo) {
         <div className="relative z-10 mb-7 grid grid-cols-1 justify-items-center gap-3">
             <p className=" text-center font-semibold ">PRICING</p>
             <p
-                className=" text-2xl md:text-5xl font-bold">Our plans for your strategies</p>
+                className=" text-2xl md:text-5xl font-bold  text-center">Our plans for your strategies</p>
             <p
                 className=" text-center text-xs md:text-base  max-w-2xl px-8 mb-2 ">See below our main three plans for your business, for your startup and agency.It start from here! You can teach yourself what you really like.</p>
             <div className=" flex">

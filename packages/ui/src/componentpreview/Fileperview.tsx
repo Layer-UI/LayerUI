@@ -14,7 +14,7 @@ export default function Fileperview({ filepath }: { filepath: string }) {
     return (
         <div className=' flex flex-col gap-2'>
             <div>
-                <code className=" rounded bg-muted px-1.5 bg-slate-200 border py-[0.3rem] text-sm">{`components/ui/${filepath}`}</code>
+                <code className=" rounded bg-muted px-1.5 bg-slate-200 dark:bg-slate-900 dark:border-white/10 border py-[0.3rem] text-sm">{`components/ui/${filepath}`}</code>
             </div>
             <CodeDisplay code={codeContent} codeLang='typescript'></CodeDisplay>
         </div>

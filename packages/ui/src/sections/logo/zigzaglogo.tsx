@@ -1,5 +1,3 @@
-"use client";
-
 const logos = [
     { name: 'Docker', image: '/sociallogos/Docker.svg' },
     { name: 'Google', image: '/sociallogos/Google.svg' },

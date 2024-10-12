@@ -8,6 +8,7 @@ import logo from "@/../public/logo.png"
 import { useScroll, useTransform } from 'framer-motion';
 import Screeencontainer from './ui/screencontainer';
 import { ArrowRight, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const IBM = IBM_Plex_Serif({ subsets: ['latin'], weight: '400' })
 
@@ -29,7 +30,7 @@ export default function Herosection() {
         };
     }, []);
     const scaleDimensions = () => {
-        return isMobile ? [1, 1] : [1.1, 1];
+        return isMobile ? [1, 1] : [1.3, 1];
     };
     const rotaionDimensions = () => {
         return isMobile ? [0, 0] : [50, 0];
@@ -41,25 +42,29 @@ export default function Herosection() {
 
     return (
         <div className=' pt-8 px-2 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:12px_12px]'>
-            <div className=' max-w-6xl shadow-md bg-[#fffefd] border-dashed border border-b-0 rounded-t-[2rem] h-full  w-full mx-auto'>
-                <div className=' mt-20 mx-auto max-w-3xl flex flex-col items-center gap-7'>
-                    <Image src={logo} className=' size-12 border-2 rounded-lg shadow' alt='logo'></Image>
-                    <a className=' bg-[#1F66FF] text-white px-1 py-2  rounded-2xl border-[2.5px] border-[#7ba4fd]  pr-2  shadow-md'>
-                        <span className=' rounded-lg mr-2 bg-[#A3C0FF]  bg-opacity-60 px-2 text-center py-1.5'>Coming soon</span>
-                        Templates
-                    </a>
-                    <h1 className={cn(' text-center font-semibold  text-6xl ', IBM.className)}>Lightning-Fast, Modern Components for Your Next Project</h1>
-                    <div className=' text-center max-w-2xl'>
-                        Engaging, interactive, and animated UI components and templates for <span className='font-semibold inline'><ReactIcon /> React, <Tailwindicon />TailwindCSS, <img src="/framer-motion-sm.png" alt="Framer motion logo" className="inline w-4" /> Framer Motion, and more.</span> Easily integrate them into your code with just two clicks.
-                    </div>
-                    <div>
-                        <a className={cn(' flex gap-1.5 justify-center text-white px-6 py-3 border rounded-2xl bg-black shadow-inner font-medium shadow-white ')}>
-                            Get Started
-                            <ArrowRight className=' size-6' strokeWidth={1.5} />
+            <div  className=' max-w-6xl pb-20 shadow-md bg-[#fffefd] border-dashed border border-b-0 rounded-t-[2rem] h-full  w-full mx-auto'>
+                <div ref={containerRef}>
+                    <div className='  mt-20 mx-auto max-w-3xl flex flex-col items-center gap-7'>
+                        <Image src={logo} className=' size-12 border-2 rounded-lg shadow' alt='logo'></Image>
+                        <a className=' bg-[#1F66FF] text-white px-1 py-2  rounded-2xl border-[2.5px] border-[#7ba4fd]  pr-2  shadow-md'>
+                            <span className=' rounded-lg mr-2 bg-[#A3C0FF]  bg-opacity-60 px-2 text-center py-1.5'>Coming soon</span>
+                            Templates
                         </a>
+                        <h1 className={cn(' text-center font-semibold  text-6xl ',IBM.className)}>Lightning-Fast, Modern Components for Your Next Project</h1>
+                        <div className=' text-center max-w-2xl'>
+                            Engaging, interactive, and animated UI components and templates for <span className='font-semibold inline'><ReactIcon /> React, <Tailwindicon />TailwindCSS, <img src="/framer-motion-sm.png" alt="Framer motion logo" className="inline w-4" /> Framer Motion, and more.</span> Easily integrate them into your code with just two clicks.
+                        </div>
+                        <div className=' flex justify-center '>
+                            <Link href={'/'} className="group hover:-translate-y-1.5 relative justify-center items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-950 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50">
+                                <span className="absolute left-0 top-0 size-full rounded-2xl border-neutral-500 shadow-inner shadow-white/60 group-active:shadow-white/10"></span>
+                                <span className="absolute left-0 top-0 size-full rotate-180 rounded-2xl border-neutral-300 shadow-inner shadow-black/30 group-active:shadow-black/10"></span>
+                                Get Started
+                                <ArrowRight className=' group-hover:translate-x-2 ease-in-out transition-all duration-300 h-[1.3rem] w-[1.3rem]' strokeWidth={1.5} />
+                            </Link>
+                        </div>
                     </div>
+                    <Screeencontainer rotate={rotate} scale={scale}></Screeencontainer>
                 </div>
-                <Screeencontainer rotate={rotate} scale={scale}></Screeencontainer>
             </div>
         </div>
     )

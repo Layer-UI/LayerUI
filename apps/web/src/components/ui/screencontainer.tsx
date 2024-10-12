@@ -30,7 +30,7 @@ export default function Screeencontainer({
                             style={{ display: 'block' }}
                             className=" rounded-2xl shadow-md border"
                         >
-                            <source src="/herovideo.mp4" type="video/mp4" />
+                            <source src="/hero/herovideo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>

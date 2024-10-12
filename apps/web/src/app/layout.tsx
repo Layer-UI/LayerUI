@@ -28,7 +28,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavigationBar></NavigationBar>
           {children}
           <TwoColumnFooter></TwoColumnFooter>
         </ThemeProvider>

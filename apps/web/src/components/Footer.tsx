@@ -26,7 +26,7 @@ const TwoColumnFooter = () => {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="font-inter mt-14 pt-12 border-t flex flex-col items-center  w-full"
+      className="font-inter  pt-12  border-t flex flex-col items-center  w-full"
     >
       <div className="mx-auto w-full  max-w-5xl px-10">
         <div className="flex flex-col justify-between lg:flex-row">

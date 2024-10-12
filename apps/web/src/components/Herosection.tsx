@@ -50,12 +50,12 @@ export default function Herosection() {
                             <span className=' rounded-lg mr-2 bg-[#A3C0FF]  bg-opacity-60 px-2 text-center py-1.5'>Coming soon</span>
                             Templates
                         </a>
-                        <h1 className={cn(' text-center font-semibold  text-6xl ',IBM.className)}>Lightning-Fast, Modern Components for Your Next Project</h1>
+                        <h1 className={cn(' text-center font-semibold text-3xl  md:text-6xl ',IBM.className)}>Lightning-Fast, Modern Components for Your Next Project</h1>
                         <div className=' text-center max-w-2xl'>
                             Engaging, interactive, and animated UI components and templates for <span className='font-semibold inline'><ReactIcon /> React, <Tailwindicon />TailwindCSS, <img src="/framer-motion-sm.png" alt="Framer motion logo" className="inline w-4" /> Framer Motion, and more.</span> Easily integrate them into your code with just two clicks.
                         </div>
                         <div className=' flex justify-center '>
-                            <Link href={'/'} className="group hover:-translate-y-1.5 relative justify-center items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-950 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50">
+                            <Link href='sections/pricing/gridpricing' className="group hover:-translate-y-1.5 relative justify-center items-center flex gap-2 rounded-2xl border-2 shadow-xl border-neutral-950 bg-neutral-950 px-6 py-3 font-medium text-white duration-1000 hover:shadow-lg hover:shadow-neutral-950/50">
                                 <span className="absolute left-0 top-0 size-full rounded-2xl border-neutral-500 shadow-inner shadow-white/60 group-active:shadow-white/10"></span>
                                 <span className="absolute left-0 top-0 size-full rotate-180 rounded-2xl border-neutral-300 shadow-inner shadow-black/30 group-active:shadow-black/10"></span>
                                 Get Started

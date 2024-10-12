@@ -3,7 +3,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { CardDemo } from "./ui/Feature_Block _Card";
+import { Techlogos } from "./ui/Feature_Block _Card";
 import BlurFade from "./ui/blur-fade";
 
 
@@ -241,11 +241,7 @@ export const TrendingSections = () => {
 
 export const Technologies = () => {
     return (
-        <div className="flex justify-center items-center relative h-full w-full bg-transparent dark:bg-transparent mt-10">
-            <BlurFade className="  h-[90%] w-[90%] ">
-                <CardDemo></CardDemo>
-            </BlurFade>
-        </div>
+            <Techlogos></Techlogos>
     );
 };
 

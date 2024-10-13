@@ -27,7 +27,7 @@ const Footer = ({bg}:{bg?:string}) => {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className={cn("font-inter  pt-12  border-t flex flex-col items-center mt-10  w-full",bg)}
+      className={cn("font-inter  py-12  border-t flex flex-col items-center mt-10  w-full",bg)}
     >
       <div className="mx-auto w-full  max-w-5xl px-10">
         <div className="flex flex-col justify-between lg:flex-row">

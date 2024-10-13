@@ -11,9 +11,9 @@ export default function DocsCode({ code, children }: { code?: string, children?:
         <div className="flex">
             <div className="flex flex-col items-center mr-4">
                 <div>
-                    <div className="flex items-center shadow-md justify-center w-7 h-7 border rounded-full">
+                    <div className="flex items-center shadow-md justify-center w-7 h-7 border dark:border-white/40 rounded-full">
                         <svg
-                            className="w-3.5 text-gray-600 -rotate-90"
+                            className="w-3.5  -rotate-90"
                             stroke="currentColor"
                             strokeWidth="1.5"
                             strokeLinecap="round"
@@ -36,7 +36,7 @@ export default function DocsCode({ code, children }: { code?: string, children?:
                         </svg>
                     </div>
                 </div>
-                <div className="w-px h-full border shadow-md bg-gray-300" />
+                <div className="w-px h-full shadow-md bg-gray-300 dark:bg-gray-700" />
             </div>
             <div className=" pb-8 w-full">
                 {children}

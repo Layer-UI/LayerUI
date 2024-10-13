@@ -2,9 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
-import NavigationBar from "@/components/NavigationBar";
 import { ThemeProvider } from "next-themes";
-import TwoColumnFooter from "@/components/Footer";
 import { constructMetadata } from "@/lib/utils";
 
 
@@ -29,7 +27,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <TwoColumnFooter></TwoColumnFooter>
         </ThemeProvider>
         <Analytics></Analytics>
       </body>

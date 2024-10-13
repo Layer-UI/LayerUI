@@ -23,7 +23,7 @@ export function CodeDisplay({
       {staticcode ? (
         <div
           className={cn(
-            'relative w-full p-3 flex justify-between items-center bg-black rounded-xl',
+            'relative w-full p-3 flex justify-between items-center bg-black border shadow-md dark:border-white/40 rounded-xl',
           )}
         >
           <CopyButton value={code} className="z-10 border-none" />
@@ -36,7 +36,7 @@ export function CodeDisplay({
         <div className="relative">
           <CopyButton value={code} className="absolute top-4 right-4 z-10" />
           <ScrollArea.Root
-            className="relative bg-black rounded-lg"
+            className="relative bg-black rounded-lg border shadow-md dark:border-white/40"
             style={{ height: isExpanded ? '600px' : '400px', width: '100%' }}
           >
             <ScrollArea.Viewport className="w-full h-full p-5">

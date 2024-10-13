@@ -28,19 +28,17 @@ export default function page() {
                         </DocsCode>
                         <DocsCode code={utilfile}>
                             <p className="mb-2 text-lg font-bold">Add util file</p>
-                            <p className=' my-2 text-base'>Copy and paste the following code into your project lib/utils.ts.</p>
+                            <p className=' my-2 text-base text-gray-700 dark:text-gray-300'>Copy and paste the following code into your project lib/utils.ts.</p>
                         </DocsCode>
                         <DocsCode>
                             <p className="mb-2 text-lg font-bold">Copy & Paste</p>
-                            <p className="text-gray-700">
+                            <p className="text-gray-700 dark:text-gray-300">
                                 Absolutely! Now you can visit any component page and follow the provided instructions. Simply copy and paste the components you need, without any unnecessary bloat or third-party dependencies.
                             </p>
                         </DocsCode>
                         <DocsCode>
                             <p className="mb-2 text-lg font-bold">Success</p>
-                            <p className="text-gray-700" />
                         </DocsCode>
-
                     </div>
                 </div>
             </div>

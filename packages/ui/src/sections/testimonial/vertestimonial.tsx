@@ -1,5 +1,5 @@
-import TestimonialCard from '@/components/ui/hovertestimonialcard';
-import TestimonialHeader from '@/components/ui/hovertestimonialheader';
+import TestimonialCard from '@/components/ui/vertical-testimonialcard';
+import TestimonialHeader from '@/components/ui/vertical-testimonialheader';
 import { motion } from 'framer-motion';
 
 const testimonials = [

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { extractFilesAndPackages } from '@/actions/getcomponent';
 import { CopyButton } from './CopyButton';
 import Fileperview from './Fileperview';
+import Loading from '@/components/ui/Loading';
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   filePath: string;
@@ -64,12 +65,12 @@ const ComponentPreview = ({
       </div>
 
       {activeTab === 'preview' && (
-        <div className="relative rounded-md border">
+        <div className="relative rounded-md border dark:border-white/30 shadow-md">
           <div className={cn('preview flex relative min-h-[250px] w-full justify-center overflow-hidden')}>
             <Suspense
               fallback={
                 <div className="text-muted-foreground flex items-center text-sm">
-                  Loading component...
+                  Loading component <Loading></Loading>
                 </div>
               }
             >

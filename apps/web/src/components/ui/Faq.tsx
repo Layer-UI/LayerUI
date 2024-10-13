@@ -35,10 +35,10 @@ const FaqList = [
 
 export default function Faq() {
     return (
-        <section className="flex max-w-2xl mx-auto shadow -z-10 bg-[#fffefd] border-dashed border   w-full flex-col gap-5 items-center py-10 px-5">
+        <section className="flex max-w-2xl mx-auto   w-full flex-col gap-5 items-center py-10 px-5">
             <div className=" flex flex-col items-center mb-4 gap-4 max-w-xl">
                 <BlurFade>
-                    <div className=" flex px-3.5 w-[6.8rem] py-1 text-sm  bg-white border dark:bg-black dark:border-white/30 dark:shadow-white/20 dark:shadow-inner  items-center rounded-full shadow-sm justify-center  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                    <div className=" flex px-3.5 w-[6.8rem] py-1 text-sm  border  dark:border-white/30 dark:shadow-white/20 dark:shadow-inner  items-center rounded-full shadow-sm justify-center  transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
                         FAQ
                     </div>
                 </BlurFade>

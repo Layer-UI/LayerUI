@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from "@/../public/logo.png"
+import { cn } from '@/lib/utils'
 
 const navigation = {
   connect: [
@@ -22,11 +23,11 @@ const navigation = {
   ],
 }
 
-const TwoColumnFooter = () => {
+const Footer = ({bg}:{bg?:string}) => {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="font-inter  pt-12  border-t flex flex-col items-center  w-full"
+      className={cn("font-inter  pt-12  border-t flex flex-col items-center mt-10  w-full",bg)}
     >
       <div className="mx-auto w-full  max-w-5xl px-10">
         <div className="flex flex-col justify-between lg:flex-row">
@@ -90,4 +91,4 @@ const TwoColumnFooter = () => {
   )
 }
 
-export default TwoColumnFooter
+export default Footer

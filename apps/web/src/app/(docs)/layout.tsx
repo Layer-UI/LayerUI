@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 import { Sidebar } from "@/components/Sidebar";
 import { ScrollArea } from "@/components/ui/scrollarea";
@@ -21,6 +22,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
           {children}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }

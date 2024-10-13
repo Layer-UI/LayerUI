@@ -1,59 +1,27 @@
-# Turborepo Tailwind CSS starter
+![LayerUI Introduction](apps/web/public/hero/herovideo.mp4)
 
-This is an official starter Turborepo.
+<h2 align="center">Layer UI</h2>
+<h4 align="center">
+    Lightning-Fast, Modern Components for Your Next Project
+</h4>
+<p align='center'>
+Welcome to LayerUI – your one-stop solution for sleek, efficient, and modern UI components! Whether you're building from scratch or enhancing an existing project, our components make it 10x Faster, Better, and Modern.  
+</p>
 
-## Using this example
+### ⭐ GitHub Repository  
+[![GitHub Stars](https://img.shields.io/github/stars/Layer-UI/LayerUI?style=social)](https://github.com/Layer-UI/LayerUI)  
 
-Run the following command:
+> Join our growing community! Explore the repository, leave a ⭐, and contribute to making LayerUI even better.
 
-```sh
-npx create-turbo@latest -e with-tailwind
-```
 
-## What's inside?
+### 📲 Follow Us on Twitter  
+[![Twitter Follow](https://img.shields.io/twitter/follow/Maheshwarr20?style=social)](https://x.com/Maheshwarr20)  
 
-This Turborepo includes the following packages/apps:
+Stay updated with the latest releases and announcements!
 
-### Apps and Packages
+## Contributing
+Contributions are welcome! If you'd like to add new components or features, Please read the [contributing guide](/CONTRIBUTING.md).
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Building packages/ui
-
-This example is set up to produce compiled styles for `ui` components into the `dist` directory. The component `.tsx` files are consumed by the Next.js apps directly using `transpilePackages` in `next.config.js`. This was chosen for several reasons:
-
-- Make sharing one `tailwind.config.js` to apps and packages as easy as possible.
-- Make package compilation simple by only depending on the Next.js Compiler and `tailwindcss`.
-- Ensure Tailwind classes do not overwrite each other. The `ui` package uses a `ui-` prefix for it's classes.
-- Maintain clear package export boundaries.
-
-Another option is to consume `packages/ui` directly from source without building. If using this option, you will need to update the `tailwind.config.js` in your apps to be aware of your package locations, so it can find all usages of the `tailwindcss` class names for CSS compilation.
-
-For example, in [tailwind.config.js](packages/tailwind-config/tailwind.config.js):
-
-```js
-  content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    "../../packages/ui/*.{js,ts,jsx,tsx}",
-  ],
-```
-
-If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [Tailwind CSS](https://tailwindcss.com/) for styles
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-# LayerUI
+## Let's talk
+<a href="https://cal.com/maheshwar-reddy-20"><img alt="Book us with Cal.com" src="https://cal.com/book-with-cal-dark.svg" /></a>

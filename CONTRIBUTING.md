@@ -9,7 +9,7 @@ We’re excited to have you contribute to **LayerUI**! Your ideas and efforts ar
 
 2. **Clone your forked repository to your local machine**
 ```bash
-   git clone https://github.com/<YOUR_USERNAME>/layerui.git
+git clone https://github.com/<YOUR_USERNAME>/layerui.git
 ```
 
 3. **Navigate to the project directory**
@@ -39,7 +39,7 @@ Add your component file in `packages/ui/src/sections`. Use lowercase for the fil
 
 **Example:**
 
-```bash
+```typescript
 import { ArrowLeft } from 'lucide-react';
 import Heading from "@/components/ui/heading";
 import React from 'react';
@@ -63,7 +63,7 @@ If your component has subcomponents, make sure they are imported from `packages/
 
 **Example:**
 
-```bash
+```typescript
 import Heading from "@/components/ui/heading";
 ```
 
@@ -71,12 +71,26 @@ import Heading from "@/components/ui/heading";
 
 If your component requires images, add them in `apps/web/public`.
 
+### Update Sidebar
+
+Add your component to the sidebar in `apps/web/lib/sectionlist.ts`
+
+```typescript
+{
+    title: "Example Component",
+    href: `/docs/components/example-component`,
+    items: [],
+    label: "New",
+}
+```
+
 ## Submitting Your Contribution
 
 ```bash
 git add .
 git commit -m "Add new Button component"
 git push origin my-new-component
+
 ```
 
 Finally, open a pull request (PR) from your branch to the main repository and link it to any relevant issue.

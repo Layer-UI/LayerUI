@@ -1,3 +1,4 @@
+import { title } from "process";
 
 export const sidebarList = [
     {
@@ -11,13 +12,33 @@ export const sidebarList = [
         ],
     },
     {
+        title: "Background",
+        items: [
+            {
+                title: "Background1",
+                href: `/sections/background/background1`,
+                items: [""],
+            },
+            {
+                title: "Background2",
+                href: `/sections/background/background2`,
+                items: [""],
+            },
+            {
+                title: "Background3",
+                href: `/sections/background/background3`,
+                items: [""],
+            },
+        ]
+    },
+    {
         title: "Hero",
         items: [
             {
                 title: "GlowSphere",
                 href: `/sections/hero/glowsphere`,
                 items: [""],
-                
+
             },
         ],
     },

@@ -1,4 +1,4 @@
-![LayerUI Introduction](apps/web/public/hero/herovideo.mp4)
+![LayerUI Introduction](apps/web/public/screenshort.png)
 
 <h2 align="center">Layer UI</h2>
 <h4 align="center">

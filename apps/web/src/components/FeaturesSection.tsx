@@ -46,7 +46,7 @@ export function FeaturesSection() {
             <div className="px-8">
                 <BlurFade
                     className={cn(
-                        " text-center",
+                        " text-center text-base mb-3",
                     )}
                 >
                     OVERVIEW

@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import logo from "@/../public/logo.png"
 import { Sidebar } from './Sidebar';
-import { sidebarList } from '@/lib/sectionlist';
+import { sidebarList } from '@/lib/sidebarlist';
 
 export default function NavigationBar() {
   const [isMenuOpen, setMenuOpen] = useState(false)

@@ -1,51 +1,76 @@
-import { type ClassValue, clsx } from "clsx"
-import { Metadata } from "next"
-import { twMerge } from "tailwind-merge"
+import { type ClassValue, clsx } from "clsx";
+import { Metadata } from "next";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 export function constructMetadata({
-  title = "LayerUI - providing pre-built UI components",
-  description = "Simplified coding workflows for developers by providing pre-built UI components,eliminating the need to start from scratch and accelerating project timelines.",
-  image = "/thumbnail.png",
-  icons = "/favicon.ico",
-  noIndex = false
+  title = "LayerUI - Build 10x Faster with TailwindCSS & Framer Motion",
+  description =
+    "Accelerate your development with LayerUI, a React component library powered by TailwindCSS and Framer Motion. Enjoy modern, pre-built UI components for fast, scalable, and smooth web experiences.",
+  image = "/screenshot.png",
+  icons = "/logo.png",
+  noIndex = false,
 }: {
-  title?: string
-  description?: string
-  image?: string
-  icons?: string
-  noIndex?: boolean
+  title?: string;
+  description?: string;
+  image?: string;
+  icons?: string;
+  noIndex?: boolean;
 } = {}): Metadata {
+  const keywords = [
+    "LayerUI",
+    "TailwindCSS components",
+    "Framer Motion UI library",
+    "React UI components",
+    "pre-built UI elements",
+    "UI component library",
+    "developer productivity tools",
+    "responsive design components",
+    "animated UI components",
+    "React animations",
+    "open-source UI library",
+    "web development tools",
+  ].join(", ");
+
   return {
     title,
     description,
+    keywords, // SEO keywords for search engines
     openGraph: {
       title,
       description,
       images: [
         {
-          url: image
-        }
-      ]
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: "LayerUI Component Library Screenshot",
+        },
+      ],
+      siteName: "LayerUI",
+      type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
       images: [image],
-      creator: "@Maheshwarreddy"
+      creator: "@Maheshwarreddy",
     },
-    icons,
-    metadataBase: new URL('https://www.layerui.com'),
-    themeColor: '#FFF',
+    icons: {
+      icon: icons,
+      apple: icons,
+    },
+    metadataBase: new URL("https://www.layerui.com"),
+    themeColor: "#0F172A", // Tailwind's Slate-900
     ...(noIndex && {
       robots: {
         index: false,
-        follow: false
-      }
-    })
-  }
+        follow: false,
+      },
+    }),
+  };
 }

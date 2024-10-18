@@ -30,7 +30,7 @@ export default function background1() {
                                 className=' flex flex-nowrap '>
                                 {
                                     x.map((_j, j) => (
-                                        <div key={j} className=' bg-white  relative p-1 w-28 h-28 dark:bg-black shadow-md  m-[0.8px] z-10'>
+                                        <div key={j} className=' bg-white  relative p-1 w-28 h-28 dark:bg-black shadow-md  m-[0.8;px] z-10'>
                                         </div>
                                     ))
                                 }

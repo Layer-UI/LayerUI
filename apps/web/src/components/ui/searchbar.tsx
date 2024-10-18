@@ -12,7 +12,7 @@ import {
     CommandSeparator,
 } from "@/components/ui/command"
 import Link from "next/link";
-import { sidebarList } from "@/lib/sectionlist";
+import { sidebarList } from "@/lib/sidebarlist";
 
 export function SearchBar() {
     const [open, setOpen] = React.useState(false)

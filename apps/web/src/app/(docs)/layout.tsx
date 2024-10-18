@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 import { Sidebar } from "@/components/Sidebar";
 import { ScrollArea } from "@/components/ui/scrollarea";
-import { sidebarList } from "@/lib/sectionlist";
+import { sidebarList } from "@/lib/sidebarlist";
 
 interface DocsLayoutProps {
   children: React.ReactNode;

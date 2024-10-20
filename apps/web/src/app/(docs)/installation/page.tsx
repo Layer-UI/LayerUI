@@ -15,14 +15,14 @@ export function cn(...inputs: ClassValue[]) {
 export default function page() {
 
     return (
-        <section className=' py-14 '>
+        <section className=' py-10 lg:py-14 '>
             <div className=' font-bold text-xl'>
                 Add Utilities
             </div>
             <p className='my-1'>Commonly used utilities for using Layer UI</p>
-            <div className="px-4 pt-4 pb-16 mx-auto w-full">
+            <div className="  overflow-hidden  pt-4 pb-16 mx-auto w-full">
                 <div className="w-full">
-                    <div className="lg:py-6 lg:pr-16">
+                    <div className="lg:py-6 py-0 pr-0 lg:pr-16">
                         <DocsCode code='npm install tailwindcss@latest clsx tailwind-merge framer-motion'>
                             <p className='mb-2 text-lg font-bold'>Install dependencies</p>
                         </DocsCode>

@@ -23,7 +23,7 @@ export function CodeDisplay({
       {staticcode ? (
         <div
           className={cn(
-            'relative w-full p-3 flex justify-between items-center bg-black border shadow-md dark:border-white/40 rounded-xl',
+            'relative w-full p-3 flex justify-between overflow-hidden items-center bg-black border shadow-md dark:border-white/40 rounded-xl',
           )}
         >
           <CopyButton value={code} className="z-10 border-none" />

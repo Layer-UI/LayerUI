@@ -27,11 +27,11 @@ export default function Page() {
                     />
                 </div>
             )}
-            <div className=' flex gap-6 '>
-                <a href={template?.livelink} className=' bg-black text-lg  flex gap-3 items-center rounded-xl shadow-md px-6 py-2 border text-white hover:-translate-y-1 ease-in-out duration-200 transition-all hover:shadow-2xl'>Live Preview
+            <div className=' flex gap-2 md:gap-6 '>
+                <a href={template?.livelink} className=' bg-black md:text-lg  flex gap-1.5 md:gap-3 text-base items-center rounded-xl shadow-md px-6 py-2 border text-white hover:-translate-y-1 ease-in-out duration-200 transition-all hover:shadow-2xl'>Live Preview
                 <RiExternalLinkLine className=' size-5' />
                 </a>
-                <a href={template?.code} className=' bg-black text-lg  flex gap-3 items-center rounded-xl shadow-md px-6 py-2 border text-white hover:-translate-y-1 ease-in-out duration-200 transition-all hover:shadow-2xl '>Source Code
+                <a href={template?.code} className=' bg-black md:text-lg  flex gap-1.5 md:gap-3 items-center text-base rounded-xl shadow-md px-6 py-2 border text-white hover:-translate-y-1 ease-in-out duration-200 transition-all hover:shadow-2xl '>Source Code
                 <FaGithub  className=' size-5'/>
                 </a>
             </div>

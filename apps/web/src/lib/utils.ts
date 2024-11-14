@@ -1,6 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
 import { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
+import image from '../../public/screenshort.png'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -10,8 +11,8 @@ export function constructMetadata({
   title = "LayerUI - Build 10x Faster with TailwindCSS & Framer Motion",
   description =
     "Accelerate your development with LayerUI, a React component library powered by TailwindCSS and Framer Motion. Enjoy modern, pre-built UI components for fast, scalable, and smooth web experiences.",
-  image = "/screenshot.png",
-  icons = "/logo.png",
+  image = "../../public/screenshort.png",
+  icons = "../../public/logo.png",
   noIndex = false,
 }: {
   title?: string;

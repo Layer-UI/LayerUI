@@ -101,9 +101,9 @@ export default function AuthSection() {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             className="lucide lucide-arrow-right group-hover/button:translate-x-2 group-hover/button:duration-200 group-hover/button:ease-in-out"
                         >
                             <path d="M5 12h14" />
@@ -123,21 +123,21 @@ export default function AuthSection() {
                             type="submit"
                             className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <SlSocialGoogle  className="size-5"/>
+                            <SlSocialGoogle className="size-5" />
                             <span>Continue with Google</span>
                         </button>
                         <button
                             type="submit"
                             className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <RiTwitterXLine className="size-5"/>
+                            <RiTwitterXLine className="size-5" />
                             <span>Continue with Twitter</span>
                         </button>
                         <button
                             type="submit"
                             className="flex gap-3 items-center w-full border border-gray-300 rounded-lg px-6 py-1.5 text-sm font-medium dark:hover:shadow-white/40 hover:-translate-y-1 transform transition duration-200 hover:shadow-md active:scale-95"
                         >
-                            <FaApple  className="size-5"/>
+                            <FaApple className="size-5" />
                             <span>Continue with Apple</span>
                         </button>
                     </div>

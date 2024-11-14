@@ -64,7 +64,7 @@ const Faq: React.FC = () => {
                 transition={{ duration: 0.5, ease: "easeIn", type: "just" }}
                 className="flex flex-col items-center mb-4 gap-4 max-w-4xl">
                 <p className="border  flex items-center gap-1 py-0.5 px-3 rounded-full text-sm shadow-sm dark:bg-black/5 dark:shadow-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className=" h-3.5 w-3.5 lucide lucide-message-circle-question"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className=" h-3.5 w-3.5 lucide lucide-message-circle-question"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><path d="M12 17h.01" /></svg>
                     FAQ
                 </p>
                 <p className="text-3xl text-center sm:text-5xl  font-bold">

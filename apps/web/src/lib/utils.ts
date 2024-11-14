@@ -65,7 +65,6 @@ export function constructMetadata({
       apple: icons,
     },
     metadataBase: new URL("https://www.layerui.com"),
-    themeColor: "#0F172A", // Tailwind's Slate-900
     ...(noIndex && {
       robots: {
         index: false,
